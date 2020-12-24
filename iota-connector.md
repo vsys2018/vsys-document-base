@@ -61,4 +61,4 @@ Khi sự kiện IOTA connector nhận được tin nhắn thì nội dung có d�
 ![](https://oustittl.sirv.com/iota-connector/IOTA-MSG.png)
 
 Tài liệu sử dụng IOTA:
-https://github.com/nghuyy/iota/blob/main/VirtualIO.md
+`https://github.com/nghuyy/iota/blob/main/VirtualIO.md`
