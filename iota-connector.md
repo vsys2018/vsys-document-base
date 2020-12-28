@@ -59,3 +59,6 @@ Trong đó:
 Khi sự kiện IOTA connector nhận được tin nhắn thì nội dung có dạng `user|message` và lưu vào `#1` của `N` đang chứa sự kiện đó.
 
 ![](https://oustittl.sirv.com/iota-connector/IOTA-MSG.png)
+
+Tài liệu sử dụng IOTA:
+[Link](https://github.com/nghuyy/iota/blob/main/VirtualIO.md)
