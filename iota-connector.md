@@ -1,4 +1,5 @@
 ### IOTA CONNECTOR DOCUMENT
+![Tài liệu V2](https://github.com/VSYS-DevTeam/IOTA-VTConnector)
 
 IOTA connector là một ngoại vi ảo hóa. Mục đích chính của nó là để tạo một kết nối realtime đến IOTA server. Từ đây, giữa nền tảng IOTA và IO ảo có thể trao đổi với nhau thông qua các thông điệp gửi đi.
 
