@@ -47,8 +47,6 @@ Trong đó:
 ### Danh sách các lệnh đối với IOTA connector:
 
 - `I101'info'` kiểm tra trạng thái thiết bị.
-- `I101'iota.login,user,password'` đăng nhập iota với user và password. Nếu đăng nhập thành công thì kiểm tra `I101'info'` ta sẽ thấy trạng thái là `LOGGED`. Nếu không đăng nhập thành công là `UNLOGIN`.
-- `I101'iota.logout'` đăng xuất khỏi IOTA. Nếu thành công kiểm tra `I101'info'` và nhận được `UNLOGIN`
 - `I101'io.del'` xóa bộ IO hiện tại ra khỏi IOTA connector. Xóa được coi là thành công khi kiểm tra lại `I101'info'` và nhận được thông báo `ERR_TARGET_NOT_FOUND`
 - `I101'io.send,user,message'` yêu cầu gửi tin nhắn qua IOTA connector cho `user` với nội dung `message`.
 - `I101'io.free'` giải phóng phiên làm việc cho bộ IO hiện tại. Trả bộ IO hiện tại vào hàng chờ rảnh của IOTA connector.
@@ -57,9 +55,11 @@ Trong đó:
 
 - `I101-1` sự kiện khi có tin nhắn đến từ user.
 
-Khi sự kiện IOTA connector nhận được tin nhắn thì nội dung có dạng `user|message` và lưu vào `#1` của `N` đang chứa sự kiện đó.
+Khi sự kiện IOTA connector nhận được tin nhắn thì nội dung có dạng `user|message|session` và lưu vào `#1` của `N` đang chứa sự kiện đó.
 
 ![](https://oustittl.sirv.com/iota-connector/IOTA-MSG.png)
+
+- `I101-2` sự kiện khi đóng trình duyệt.
 
 Tài liệu sử dụng IOTA:
 [Link](https://github.com/nghuyy/iota/blob/main/VirtualIO.md)
