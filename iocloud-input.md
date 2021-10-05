@@ -258,7 +258,7 @@ Trong đó:
 
 - Cú pháp mới: `D4I101.D13,"user","0912345678",1,"mnu-back"`
 
-**D14 - gửi list hình lên trang iota**
+**D14 - gửi list hình lên trang iota theo cột**
 
 ```
 Cú pháp:
