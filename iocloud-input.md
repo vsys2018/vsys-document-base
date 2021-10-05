@@ -262,7 +262,7 @@ Trong đó:
 
 ```
 Cú pháp:
-I101.D5,{send_type},{name_id},{title},{column},{data}
+I101.D14,{send_type},{name_id},{title},{column},{data}
 
 Trong đó:
 {send_type} là kiểu gửi dữ liệu. Có 2 kiểu là: "user" và "session"
