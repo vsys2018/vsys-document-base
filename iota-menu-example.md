@@ -42,3 +42,9 @@ Trong đó:
 
 Kết quả:
 ![](https://oustittl.sirv.com/documents/img007.png)
+
+### Một số trường hợp khác:
+
+Nếu không có cột giá tiền (d) thì sẽ bị hiện dòng chữ undefined. Để tránh tình trạng đó thì dùng phương thức này để giấu giá tiền đi.
+
+![](https://oustittl.sirv.com/documents/img008.png)
