@@ -257,3 +257,22 @@ Trong đó:
 - Cú pháp cũ : `D4I101,'io.send,0912345678,:toolbar.icon.1.iota-mnu-back'`
 
 - Cú pháp mới: `D4I101.D13,"user","0912345678",1,"mnu-back"`
+
+**D14 - gửi list hình lên trang iota**
+
+```
+Cú pháp:
+I101.D5,{send_type},{name_id},{title},{column},{data}
+
+Trong đó:
+{send_type} là kiểu gửi dữ liệu. Có 2 kiểu là: "user" và "session"
+{name_id} là username hoặc session id muốn gửi đến
+{title} là tiêu đề list
+{column} là số lượng cột
+{data} là dữ liệu gửi lên
+```
+
+- Ví dụ :
+- Cú pháp cũ : `D4I101,'io.send,0912345678,{'clist':[{'src':'https://oustittl.sirv.com/vsys-brochure/quy-trinh-mua-hang.png','p':0,'w':80 ,'h':80 ,'t':'Mua hàng', 'l':'iota://mua-hang'},{'src':'https://oustittl.sirv.com/vsys-brochure/quy-trinh-mua-hang.png','p':0,'w':80 ,'h':80 ,'t':'Bán hàng', 'l':'iota://ban-hang'}],'n': 'Danh sách','columns':2}'`
+
+- Cú pháp mới: `D4I101.D14,"user","0912345678","Danh sách",2,"[{'src':'https://oustittl.sirv.com/vsys-brochure/quy-trinh-mua-hang.png','p':0,'w':80 ,'h':80 ,'t':'Mua hàng', 'l':'iota://mua-hang'},{'src':'https://oustittl.sirv.com/vsys-brochure/quy-trinh-mua-hang.png','p':0,'w':80 ,'h':80 ,'t':'Bán hàng', 'l':'iota://ban-hang'}]"`
