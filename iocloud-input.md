@@ -273,6 +273,25 @@ Trong đó:
 ```
 
 - Ví dụ :
-- Cú pháp cũ : `D4I101,'io.send,0912345678,{'clist':[{'src':'https://oustittl.sirv.com/vsys-brochure/quy-trinh-mua-hang.png','p':0,'w':80 ,'h':80 ,'t':'Mua hàng', 'l':'iota://mua-hang'},{'src':'https://oustittl.sirv.com/vsys-brochure/quy-trinh-mua-hang.png','p':0,'w':80 ,'h':80 ,'t':'Bán hàng', 'l':'iota://ban-hang'}],'n': 'Danh sách','columns':2}'`
+- Cú pháp cũ : `D4I101,'io.send,0912345678,{'clist':[{'t':'Heo hầm đóng hộp','d':32000,'src':'https://vn-live-05.slatic.net/p/6124a9860643127d1ab0f5f056446120.jpg_200x200q90.jpg_.webp','l':'iota://iota-m-1'},{'t':'Cá thu sốt sate','d':119000,'src':'https://vn-live-05.slatic.net/p/5d3f672061646bc47eb05c5074a4f14f.jpg_200x200q90.jpg_.webp','l':'iota://iota-m-2'}],'n': 'Danh sách','columns':2}'`
 
-- Cú pháp mới: `D4I101.D14,"user","0912345678","Danh sách",2,"[{'src':'https://oustittl.sirv.com/vsys-brochure/quy-trinh-mua-hang.png','p':0,'w':80 ,'h':80 ,'t':'Mua hàng', 'l':'iota://mua-hang'},{'src':'https://oustittl.sirv.com/vsys-brochure/quy-trinh-mua-hang.png','p':0,'w':80 ,'h':80 ,'t':'Bán hàng', 'l':'iota://ban-hang'}]"`
+- Cú pháp mới: `D4I101.D14,"user","0912345678","Danh sách",2,"[{'t':'Heo hầm đóng hộp','d':32000,'src':'https://vn-live-05.slatic.net/p/6124a9860643127d1ab0f5f056446120.jpg_200x200q90.jpg_.webp','l':'iota://iota-m-1'},{'t':'Cá thu sốt sate','d':119000,'src':'https://vn-live-05.slatic.net/p/5d3f672061646bc47eb05c5074a4f14f.jpg_200x200q90.jpg_.webp','l':'iota://iota-m-2'}]"`
+
+**D15 - gửi list bán hàng lên trang iota theo cột**
+
+```
+Cú pháp:
+I101.D15,{send_type},{name_id},{title},{column},{data}
+
+Trong đó:
+{send_type} là kiểu gửi dữ liệu. Có 2 kiểu là: "user" và "session"
+{name_id} là username hoặc session id muốn gửi đến
+{title} là tiêu đề list
+{column} là số lượng cột
+{data} là dữ liệu gửi lên
+```
+
+- Ví dụ :
+- Cú pháp cũ : `D4I101,'io.send,0912345678,{'t':'store_clist','name':'Danh sach','cache':300,'columns':2,'img':'','d': [{"id":1,"n":"Heo hầm đóng hộp","po":100000,"promote":6000,"p":32000,"img":"https://vn-live-05.slatic.net/p/6124a9860643127d1ab0f5f056446120.jpg_200x200q90.jpg_.webp","order":1},{"id":2,"n":"Cá thu sốt sate","po":100000,"promote":6000,"p":119000,"img":"https://vn-live-05.slatic.net/p/5d3f672061646bc47eb05c5074a4f14f.jpg_200x200q90.jpg_.webp","order":1}]}'`
+
+- Cú pháp mới: `D4I101.D15,"user","0912345678","Danh sách",2,"[{"id":1,"n":"Heo hầm đóng hộp","po":100000,"promote":6000,"p":32000,"img":"https://vn-live-05.slatic.net/p/6124a9860643127d1ab0f5f056446120.jpg_200x200q90.jpg_.webp","order":1},{"id":2,"n":"Cá thu sốt sate","po":100000,"promote":6000,"p":119000,"img":"https://vn-live-05.slatic.net/p/5d3f672061646bc47eb05c5074a4f14f.jpg_200x200q90.jpg_.webp","order":1}]"`
