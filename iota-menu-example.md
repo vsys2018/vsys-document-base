@@ -48,3 +48,12 @@ Kết quả:
 Nếu không có cột giá tiền (d) thì sẽ bị hiện dòng chữ undefined. Để tránh tình trạng đó thì dùng phương thức này để giấu giá tiền đi.
 
 ![](https://oustittl.sirv.com/documents/img008.png)
+
+### Hiển thị danh sách bán hàng:
+Cũng tương tự như trên nhưng dùng D15 và đổi tên trường dữ liệu như sau
+
+![](https://oustittl.sirv.com/documents/img009.png)
+
+Kết quả:
+
+![](https://oustittl.sirv.com/documents/img010.png)
