@@ -1,4 +1,6 @@
-### Các chức năng mới:
+### Release Note 3.9.0
+
+#### Các chức năng mới:
 
 1. Xuống dòng theo khoảng cách của dòng hiện tại:
 
@@ -30,7 +32,7 @@ Hỗ trợ:
 
 ![](images/extension1.gif)
 
-### Fix bug sửa lỗi:
+#### Fix bug sửa lỗi:
 
 - Lỗi dịch sai do phân biệt chữ cái hoa thường (Vào lúc, ...)
 - Lỗi dịch sót một vài lệnh
