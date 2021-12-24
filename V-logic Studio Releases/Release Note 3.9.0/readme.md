@@ -24,6 +24,10 @@ Hỗ trợ:
 
 ![](images/localdefine2.gif)
 
+Cài đặt để luôn mở rộng phần khai báo nội bộ
+
+![](images/alwayopen.png)
+
 3. Tạo sự kiện IOTA từ trang V-logic Studio:
 
 Để giảm bớt thao tác khi tạo sự kiện quét QR IOTA, thông tin địa chỉ IOT, mã khóa API và một số tham số sẽ truyền đến trang tạo sự kiện IOTA bằng đường URL Params
